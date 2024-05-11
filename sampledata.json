@@ -1,0 +1,146 @@
+{
+    "dogs": [
+        {
+            "name": "Bailey",
+            "sex": "Male",
+            "birthday": "2022-08-21",
+            "breed": "Golden Retriever",
+            "image": "./images/dogs/golden-retriever.jpg"
+        },
+        {
+            "name": "Bella",
+            "sex": "Female",
+            "birthday": "2023-11-10",
+            "breed": "French Bulldog",
+            "image": "./images/dogs/french-bulldog.jpg"
+        },
+        {
+            "name": "Max",
+            "sex": "Male",
+            "birthday": "2021-04-12",
+            "breed": "Beagle",
+            "image": "./images/dogs/beagle.jpg"
+        },
+        {
+            "name": "Lucy",
+            "sex": "Female",
+            "birthday": "2022-02-07",
+            "breed": "Yorkshire Terrier",
+            "image": "./images/dogs/yorkshire-terrier.jpg"
+        },
+        {
+            "name": "Charlie",
+            "sex": "Male",
+            "birthday": "2020-09-29",
+            "breed": "Dachshund",
+            "image": "./images/dogs/dachshund.jpg"
+        },
+        {
+            "name": "Daisy",
+            "sex": "Female",
+            "birthday": "2023-05-18",
+            "breed": "Pomeranian",
+            "image": "./images/dogs/pomeranian.webp"
+        },
+        {
+            "name": "Cooper",
+            "sex": "Male",
+            "birthday": "2021-06-03",
+            "breed": "Rottweiler",
+            "image": "./images/dogs/rottweiler.webp"
+        },
+        {
+            "name": "Ruby",
+            "sex": "Female",
+            "birthday": "2022-12-24",
+            "breed": "Doberman Pinscher",
+            "image": "./images/dogs/doberman-pinscher.webp"
+        },
+        {
+            "name": "Rocky",
+            "sex": "Male",
+            "birthday": "2020-03-06",
+            "breed": "Bulldog",
+            "image": "./images/dogs/bulldog.jpeg"
+        },
+        {
+            "name": "Maggie",
+            "sex": "Female",
+            "birthday": "2023-09-01",
+            "breed": "Australian Shepherd",
+            "image": "./images/dogs/australian-shepherd.jpeg"
+        }
+    ],
+    "cats": [
+        {
+            "name": "Oliver",
+            "sex": "Male",
+            "birthday": "2021-01-17",
+            "breed": "Tabby",
+            "image": "./images/cats/tabby.jpeg"
+        },
+        {
+            "name": "Luna",
+            "sex": "Female",
+            "birthday": "2022-06-20",
+            "breed": "Maine Coon",
+            "image": "./images/cats/maine-coon.png"
+        },
+        {
+            "name": "Smokey",
+            "sex": "Male",
+            "birthday": "2020-10-14",
+            "breed": "Siamese",
+            "image": "./images/cats/siamese.jpeg"
+        },
+        {
+            "name": "Chloe",
+            "sex": "Female",
+            "birthday": "2023-04-04",
+            "breed": "Persian",
+            "image": "./images/cats/persian.jpeg"
+        },
+        {
+            "name": "Oscar",
+            "sex": "Male",
+            "birthday": "2021-05-31",
+            "breed": "Ragdoll",
+            "image": "./images/cats/ragdoll.jpeg"
+        },
+        {
+            "name": "Lily",
+            "sex": "Female",
+            "birthday": "2022-11-23",
+            "breed": "Sphynx",
+            "image": "./images/cats/sphynx.jpg"
+        },
+        {
+            "name": "Leo",
+            "sex": "Male",
+            "birthday": "2020-07-08",
+            "breed": "British Shorthair",
+            "image": "./images/cats/british-shorthair.jpeg"
+        },
+        {
+            "name": "Bella",
+            "sex": "Female",
+            "birthday": "2023-01-28",
+            "breed": "Russian Blue",
+            "image": "./images/cats/russian-blue.jpeg"
+        },
+        {
+            "name": "Milo",
+            "sex": "Male",
+            "birthday": "2021-09-15",
+            "breed": "Scottish Fold",
+            "image": "./images/cats/scottish-fold.jpeg"
+        },
+        {
+            "name": "Sophie",
+            "sex": "Female",
+            "birthday": "2022-03-12",
+            "breed": "Abyssinian",
+            "image": "./images/cats/abyssinian.jpeg"
+        }
+    ]
+}
