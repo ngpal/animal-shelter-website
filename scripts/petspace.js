@@ -15,17 +15,54 @@ let populateDogList = function (data) {
         let img = document.createElement("img");
         img.src = dog.image;
         img.alt = dog.name;
-        let h3 = document.createElement("h3");
-        h3.innerHTML = dog.name;
-        let p = document.createElement("p");
-        p.innerHTML = dog.breed;
+        let name = document.createElement("h3");
+        name.innerHTML = dog.name;
+        let breed = document.createElement("p");
+        breed.innerHTML = dog.breed;
+        let age = document.createElement("sub");
+        age.innerHTML = getAge(dog.birthday);
         div.appendChild(img);
-        div.appendChild(h3);
-        div.appendChild(p);
+        div.appendChild(name);
+        div.appendChild(age);
+        div.appendChild(breed);
 
         list.appendChild(div);
     });
 };
+
+function getAge(birthdayStr) {
+  const birthday = new Date(birthdayStr);
+  const today = new Date();
+
+  // Calculate years and months, handling edge cases
+  let years = today.getFullYear() - birthday.getFullYear();
+  let months = today.getMonth() - birthday.getMonth();
+
+  // Adjust for negative months (birthday this year)
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  // Handle cases where birthday falls on the same month in the current year
+  if (months === 0 && today.getDate() < birthday.getDate()) {
+    months = 11; // Adjust to 11 months for the previous year
+    years--;
+  }
+
+  const yearText = years === 0 ? "" : `${years} year${years > 1 ? "s" : ""}`;
+  const monthText = months === 0 ? "" : `${months} month${months > 1 ? "s" : ""}`;
+
+  // Combine year and month text with proper handling for both
+  const ageText = yearText.trim() + (yearText && monthText ? " and " : "") + monthText.trim();
+
+  // Handle "Less than a month old" case
+  if (years === 0 && months === 0) {
+    return "Less than a month old";
+  } else {
+    return ageText + " old"; // Add "old" at the end
+  }
+}
 
 let populateCatList = function (data) {
     let list = document.getElementById("catList");
@@ -35,13 +72,16 @@ let populateCatList = function (data) {
         let img = document.createElement("img");
         img.src = cat.image;
         img.alt = cat.name;
-        let h3 = document.createElement("h3");
-        h3.innerHTML = cat.name;
-        let p = document.createElement("p");
-        p.innerHTML = cat.breed;
+        let name = document.createElement("h3");
+        name.innerHTML = cat.name;
+        let age = document.createElement("sub");
+        age.innerHTML = getAge(cat.birthday);
+        let breed = document.createElement("p");
+        breed.innerHTML = cat.breed;
         div.appendChild(img);
-        div.appendChild(h3);
-        div.appendChild(p);
+        div.appendChild(name);
+        div.appendChild(age);
+        div.appendChild(breed);
 
         list.appendChild(div);
     });
