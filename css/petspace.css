@@ -1,84 +1,78 @@
-/* styles.css */
+html,
 body {
-  background: #1D1E22;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
+
 .section-container {
-  max-width: 75%;
-  background: #595959;
-  margin: auto;
-  padding: 20px;
-  display: flex;
-  align-items: center; /* Align the scroll icon vertically */
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.subheader {
+    padding-left: 20px;
 }
 
 .product-list-container {
-  position: relative;
-  overflow-x: auto;
-  white-space: nowrap;
-  scrollbar-width: thin;
-  scrollbar-color: #333 #ccc;
-  cursor: pointer;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #ccc;
+    cursor: pointer;
 }
 
 .product-list {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .product-card {
-  position: relative;
-  flex: 0 0 auto;
-  width: 150px;
-  margin: 15px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-      background: #fff;
+    position: relative;
+    flex: 0 0 auto;
+    width: 150px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background: #fff;
 }
 
-.new-badge {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  background-color: #FF5733;
-  color: white;
-  padding: 5px;
-  border-radius: 3px;
-  font-size: 0.8em;
-}
-
-.product-card img {
-  width: 100%;
-  height: auto;
-}
-
-/* Style scrollbar for Chrome, Safari, and Opera */
 .product-list-container::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+    width: 5px;
+    height: 5px;
 }
 
 .product-list-container::-webkit-scrollbar-thumb {
-  background: #333;
+    background: #333;
 }
 
 .product-list-container::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
 }
 
 .product-list-container::-webkit-scrollbar-track {
-  background: #ccc;
+    background: #ccc;
 }
 
 .scroll-icon {
-  font-size: 2em;
-  cursor: pointer;
-  margin-left: 20px; /* Spacing between the container and the arrow */
+    font-size: 2em;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.product-card > img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 600px) {
-  .product-card {
-    width: 90%;
-    margin: 10px;
-  }
+    .product-card {
+        width: 90%;
+        margin: 10px;
+    }
 }
