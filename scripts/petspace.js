@@ -71,7 +71,7 @@ function getAge(birthdayStr) {
 
 let populateCatList = function (data) {
     let list = document.getElementById("catList");
-    data.cats.forEach((cat) => {
+    data.cats.forEach((cat, i) => {
         let div = document.createElement("div");
         div.className = "product-card";
         let img = document.createElement("img");
