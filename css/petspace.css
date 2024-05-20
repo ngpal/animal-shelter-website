@@ -41,6 +41,10 @@ body {
     background: #fff;
 }
 
+.product-card:hover {
+    cursor: pointer;
+}
+
 .product-list-container::-webkit-scrollbar {
     width: 5px;
     height: 5px;
