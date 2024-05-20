@@ -9,7 +9,7 @@ fetch("../sampledata.json").then((response) => {
 
 let populateDogList = function (data) {
     let list = document.getElementById("dogList");
-    data.dogs.forEach((dog) => {
+    data.dogs.forEach((dog, i) => {
         let div = document.createElement("div");
         div.className = "product-card";
         let img = document.createElement("img");
@@ -21,6 +21,11 @@ let populateDogList = function (data) {
         breed.innerHTML = dog.breed;
         let age = document.createElement("sub");
         age.innerHTML = getAge(dog.birthday);
+
+        div.addEventListener("click", function () { 
+            window.location.href = "../pages/checkout.html?species=dog&index=" + i;
+        })
+
         div.appendChild(img);
         div.appendChild(name);
         div.appendChild(age);
@@ -66,7 +71,7 @@ function getAge(birthdayStr) {
 
 let populateCatList = function (data) {
     let list = document.getElementById("catList");
-    data.cats.forEach((cat) => {
+    data.cats.forEach((cat, i) => {
         let div = document.createElement("div");
         div.className = "product-card";
         let img = document.createElement("img");
@@ -82,6 +87,10 @@ let populateCatList = function (data) {
         div.appendChild(name);
         div.appendChild(age);
         div.appendChild(breed);
+
+        div.addEventListener("click", function () { 
+            window.location.href = "../pages/checkout.html?species=cat&index=" + i;
+        })
 
         list.appendChild(div);
     });
