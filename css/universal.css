@@ -8,6 +8,8 @@ body {
     background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;
+
+    min-height: 100%;
 }
 
 /* header */
