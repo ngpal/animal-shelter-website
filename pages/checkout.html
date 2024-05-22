@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkout</title>
+        <link rel="stylesheet" type="text/css" href="../css/checkout.css" />
+        <link rel="stylesheet" href="../css/universal.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <a href="./login.html" class="login-button">Login</a>
+                <a class="logo" href="../pages/home.html">
+                    <img
+                        src="../images/logo-no-background.png"
+                        alt="A.A.C.I Logo"
+                    />
+                </a>
+            </div>
+            <h1>A.A.C.I - Animal Adoption Interface</h1>
+            <p>Find your new furry friend today!</p>
+        </header>
+        <div class="row">
+            <div class="col-50">
+                <div class="container">
+                    <form action="../pages/confirmation.html">
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Billing Address</h3>
+                                <label for="fname"
+                                    ><i class="fa fa-user"></i> Full Name</label
+                                >
+                                <input
+                                    type="text"
+                                    id="fname"
+                                    name="firstname"
+                                    placeholder="John M. Doe"
+                                />
+                                <label for="email"
+                                    ><i class="fa fa-envelope"></i> Email</label
+                                >
+                                <input
+                                    type="text"
+                                    id="email"
+                                    name="email"
+                                    placeholder="john@example.com"
+                                />
+                                <label for="adr"
+                                    ><i class="fa fa-address-card-o"></i>
+                                    Address</label
+                                >
+                                <input
+                                    type="text"
+                                    id="adr"
+                                    name="address"
+                                    placeholder="542 W. 15th Street"
+                                />
+                                <label for="city"
+                                    ><i class="fa fa-institution"></i>
+                                    City</label
+                                >
+                                <input
+                                    type="text"
+                                    id="city"
+                                    name="city"
+                                    placeholder="New York"
+                                />
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">State</label>
+                                        <input
+                                            type="text"
+                                            id="state"
+                                            name="state"
+                                            placeholder="NY"
+                                        />
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="zip">Zip</label>
+                                        <input
+                                            type="text"
+                                            id="zip"
+                                            name="zip"
+                                            placeholder="10001"
+                                        />
+                                    </div>
+                                </div>
+                                <label for="date">Date</label>
+                                <input
+                                    type="datetime-local"
+                                    id="date"
+                                    name="fa fa-date"
+                                    min="<?php echo date('Y-m-d\TH:i'); ?>"
+                                    max="2030-01-01T19:00"
+                                    step="900"
+                                />
+                            </div>
+                        </div>
+
+                        <input
+                            type="submit"
+                            value="Confirm Booking with Shelter"
+                            class="btn"
+                        />
+                    </form>
+                </div>
+            </div>
+            <div class="col-50" id="pet-display"></div>
+        </div>
+        <footer>
+            <p>
+                &copy; 2024 A.A.C.I - Animal Adoption Interface. All rights
+                reserved.
+            </p>
+            <a href="./contactus.html">Contact us</a>
+        </footer>
+
+        <script src="../scripts/checkout.js"></script>
+    </body>
+</html>
